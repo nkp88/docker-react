@@ -5,7 +5,7 @@ services:
   -  docker
 
 before_intall:
-  - docker build -t apel73/docker-react -f Dockerfile.dev .
+  - docker build -t pheanoukpel/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true apel73/docker-react npm run test -- --coverage
+  - docker run -e CI=true pheanoukpel/docker-react npm run test -- --coverage
