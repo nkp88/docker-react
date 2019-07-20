@@ -8,3 +8,4 @@ before_intall:
 
 script:
   - docker run -e CI=true apel73/docker-react npm run test -- --coverage
+  
